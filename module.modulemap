@@ -1,0 +1,11 @@
+module CSDL [system] {
+  header "/usr/local/include/SDL2/SDL.h"
+  link "SDL2"
+  export *
+
+  module CSDL_TTF [system] {
+    header "/usr/local/include/SDL2/SDL_ttf.h"
+    link "SDL2_ttf"
+    export *
+  }
+}
